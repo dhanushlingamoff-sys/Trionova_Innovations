@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "flaticon_quiety";
+    src: url("../fonts/flaticon_quiety.ttf") format("truetype"), url("../fonts/flaticon_quiety.woff") format("woff"), url("../fonts/flaticon_quiety.woff2") format("woff2"), url("../fonts/flaticon_quiety.eot") format("embedded-opentype"), url("../fonts/flaticon_quiety.html") format("svg")
+}
+
+i[class^=flaticon-]:before,
+i[class*=" flaticon-"]:before {
+    font-family: flaticon_quiety !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.flaticon-layer:before {
+    content: ""
+}
+
+.flaticon-group:before {
+    content: ""
+}
+
+.flaticon-watch:before {
+    content: ""
+}
+
+.flaticon-server-storage:before {
+    content: ""
+}
+
+.flaticon-play:before {
+    content: ""
+}
+
+.flaticon-edit:before {
+    content: ""
+}
+
+.flaticon-eject:before {
+    content: ""
+}
+
+.flaticon-rocket:before {
+    content: ""
+}
+
+.flaticon-verified:before {
+    content: ""
+}
+
+.flaticon-folder:before {
+    content: ""
+}
+
+.flaticon-cloud-download:before {
+    content: ""
+}
+
+.flaticon-copyright:before {
+    content: ""
+}
+
+.flaticon-menu:before {
+    content: ""
+}
+
+.flaticon-bell:before {
+    content: ""
+}
+
+.flaticon-add:before {
+    content: ""
+}
+
+.flaticon-check-mark:before {
+    content: ""
+}
+
+.flaticon-street-view:before {
+    content: ""
+}
+
+.flaticon-microphone:before {
+    content: ""
+}
+
+.flaticon-network:before {
+    content: ""
+}
+
+.flaticon-phone-book:before {
+    content: ""
+}
+
+.flaticon-paper-plane:before {
+    content: ""
+}
+
+.flaticon-trash:before {
+    content: ""
+}
+
+.flaticon-id-card:before {
+    content: ""
+}
+
+.flaticon-chat-bubble:before {
+    content: ""
+}
+
+.flaticon-git:before {
+    content: ""
+}
+
+.flaticon-delivery-truck:before {
+    content: ""
+}
+
+.flaticon-graduate:before {
+    content: ""
+}
+
+.flaticon-web-page:before {
+    content: ""
+}
+
+.flaticon-add-contact:before {
+    content: ""
+}
+
+.flaticon-command:before {
+    content: ""
+}
+
+.flaticon-headset:before {
+    content: ""
+}
+
+.flaticon-folder-1:before {
+    content: ""
+}
+
+.flaticon-cancel:before {
+    content: ""
+}
+
+.flaticon-house:before {
+    content: ""
+}
+
+.flaticon-share:before {
+    content: ""
+}
+
+.flaticon-upload:before {
+    content: ""
+}
+
+.flaticon-printer:before {
+    content: ""
+}
+
+.flaticon-download:before {
+    content: ""
+}
+
+.flaticon-shuffle:before {
+    content: ""
+}
+
+.flaticon-avatar:before {
+    content: ""
+}
+
+.flaticon-pie-chart:before {
+    content: ""
+}
+
+.flaticon-star:before {
+    content: ""
+}
+
+.flaticon-link:before {
+    content: ""
+}
+
+.flaticon-copy:before {
+    content: ""
+}
+
+.flaticon-padlock:before {
+    content: ""
+}
+
+.flaticon-settings:before {
+    content: ""
+}
+
+.flaticon-upload-1:before {
+    content: ""
+}
+
+.flaticon-download-1:before {
+    content: ""
+}
+
+.flaticon-magnifying-glass:before {
+    content: ""
+}
+
+.flaticon-like:before {
+    content: ""
+}
+
+.flaticon-settings-1:before {
+    content: ""
+}
+
+.flaticon-heart:before {
+    content: ""
+}
+
+.flaticon-placeholder:before {
+    content: ""
+}
+
+.flaticon-next:before {
+    content: ""
+}
+
+.flaticon-garbage:before {
+    content: ""
+}
+
+.flaticon-danger:before {
+    content: ""
+}
+
+.flaticon-clipboard:before {
+    content: ""
+}
+
+.flaticon-analytics:before {
+    content: ""
+}
+
+.flaticon-graduation-cap:before {
+    content: ""
+}
+
+.flaticon-flash:before {
+    content: ""
+}
+
+.flaticon-user:before {
+    content: ""
+}
+
+.flaticon-shopping-list:before {
+    content: ""
+}
+
+.flaticon-briefcase:before {
+    content: ""
+}
+
+.flaticon-credit-card:before {
+    content: ""
+}
+
+.flaticon-pen-tool:before {
+    content: ""
+}
+
+.flaticon-fingerprint:before {
+    content: ""
+}
+
+.flaticon-logout:before {
+    content: ""
+}
+
+.flaticon-envelope:before {
+    content: ""
+}
+
+.flaticon-shopping-bag:before {
+    content: ""
+}
+
+.flaticon-speaker:before {
+    content: ""
+}
+
+.flaticon-phone-call:before {
+    content: ""
+}
+
+.flaticon-vector:before {
+    content: ""
+}
+
+.flaticon-dislike:before {
+    content: ""
+}
+
+.flaticon-reload:before {
+    content: ""
+}
+
+.flaticon-chat:before {
+    content: ""
+}
+
+.flaticon-chat-1:before {
+    content: ""
+}
+
+.flaticon-chat-2:before {
+    content: ""
+}
+
+.flaticon-sun:before {
+    content: ""
+}
+
+.flaticon-moon:before {
+    content: ""
+}
+
+.flaticon-web-programming:before {
+    content: ""
+}
+
+.flaticon-paper-plane-1:before {
+    content: ""
+}
+
+.flaticon-sun-1:before {
+    content: ""
+}
+
+.flaticon-moon-1:before {
+    content: ""
+}

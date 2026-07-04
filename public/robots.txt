@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /privacypolicy
+Disallow: /termsandconditions
+Disallow: /copy-rights
+
+Sitemap: https://trionova.in/sitemap.xml

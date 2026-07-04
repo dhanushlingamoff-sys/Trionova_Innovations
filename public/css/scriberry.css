@@ -1,0 +1,884 @@
+
+
+.hero-banner {
+    position: relative
+}
+
+.hero-banner.style-1 {
+    height: 900px;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden
+}
+
+.hero-banner.style-1 .inner-wrapper,.hero-banner.style-1>* {
+    height: 100%
+}
+
+.hero-banner.style-1 .title {
+    font-size: 59px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.hero-banner.style-1 .text-vertical {
+    font-weight: 700;
+    font-size: 16px;
+    writing-mode: tb;
+    transform: rotate(-180deg) translateY(50%);
+    position: absolute;
+    left: 50px;
+    top: 50%
+}
+
+.hero-banner.style-1 .text {
+    font-size: 20px;
+    max-width: 500px;
+    font-weight: 300;
+    margin-bottom: 35px
+}
+
+.hero-banner.style-1 .hero-content {
+    margin-left: -50px
+}
+
+.hero-banner.style-1 .circle-wrapper {
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 1;
+    bottom: 127px
+}
+
+.hero-banner.style-1 .circle-wrapper .circle1,.hero-banner.style-1 .circle-wrapper .circle2,.hero-banner.style-1 .circle-wrapper .circle3 {
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    aspect-ratio: 1/1;
+    border: 2px solid rgba(255,255,255,.6)
+}
+
+.hero-banner.style-1 .circle-wrapper .circle1 {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.05);
+    width: 70%
+}
+
+.hero-banner.style-1 .circle-wrapper .circle2 {
+    background-color: #fff;
+    opacity: .6;
+    box-shadow: 0 0 20px rgba(0,0,0,.05);
+    width: 84%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px)
+}
+
+.hero-banner.style-1 .circle-wrapper .circle3 {
+    width: 100%
+}
+
+.hero-banner.style-1 .hero-thumbnail {
+    position: relative;
+    width: 100%
+}
+
+.hero-banner.style-1 .hero-thumbnail .thumbnail {
+    position: absolute;
+    bottom: 50%;
+    left: 52%;
+    transform: translateX(-50%);
+    z-index: 2
+}
+
+.hero-banner.style-1 .item1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+    position: absolute;
+    right: 55px;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff
+}
+
+.hero-banner.style-1 .item2 {
+    position: absolute;
+    left: -80px;
+    top: 78%;
+    z-index: 3
+}
+
+.hero-banner.style-1 .item3 {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    z-index: 4
+}
+
+.hero-banner.style-1 .item4 {
+    position: absolute;
+    right: -30px;
+    bottom: 60px;
+    z-index: 3
+}
+
+.hero-banner.style-1 .item5 {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    z-index: 3
+}
+
+@media only screen and (max-width: 1680px) {
+    .hero-banner.style-1 {
+        height:850px
+    }
+
+    .hero-banner.style-1 .hero-thumbnail {
+        width: 82%
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .hero-banner.style-1 {
+        height:800px
+    }
+
+    .hero-banner.style-1 .title {
+        font-size: 59px
+    }
+
+    .hero-banner.style-1 .title img {
+        display: none
+    }
+
+    .hero-banner.style-1 .hero-content {
+        margin-left: 0
+    }
+
+    .hero-banner.style-1 .text-vertical {
+        left: 30px
+    }
+
+    .hero-banner.style-1 .item3 {
+        top: 150px;
+        left: 20px
+    }
+
+    .hero-banner.style-1 .item4 {
+        right: 30px
+    }
+
+    .hero-banner.style-1 .item1 {
+        right: 70px;
+        top: 80px;
+        padding: 18px;
+        width: 60px;
+        height: 60px;
+        border-radius: 12px
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .hero-banner.style-1 .hero-content {
+        margin-left:-50px
+    }
+
+    .hero-banner.style-1 .hero-thumbnail {
+        margin-left: -40px
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .hero-banner.style-1 .item4,.hero-banner.style-1 .text-vertical {
+        display:none
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .hero-banner.style-1 {
+        height:580px
+    }
+
+    .hero-banner.style-1 .hero-content {
+        margin-left: 0
+    }
+
+    .hero-banner.style-1 .title {
+        font-size: 48px
+    }
+
+    .hero-banner.style-1 .item1,.hero-banner.style-1 .item2,.hero-banner.style-1 .item3,.hero-banner.style-1 .item5 {
+        display: none
+    }
+
+    .hero-banner.style-1 .hero-thumbnail {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-banner.style-1 {
+        height:auto;
+        padding-top: 50px
+    }
+
+    .hero-banner.style-1 .hero-thumbnail {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hero-banner.style-1 .hero-thumbnail {
+        width:100%
+    }
+
+    .hero-banner.style-1 .title {
+        font-size: 36px
+    }
+
+    .hero-banner.style-1 .text {
+        font-size: 16px;
+        margin-bottom: 20px
+    }
+
+    .hero-banner.style-1 .btn-icon {
+        padding: 14px 18px;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-right: 5px
+    }
+
+    .hero-banner.style-1 .btn-icon .left-icon,.hero-banner.style-1 .btn-icon .right-icon {
+        display: none
+    }
+
+    .hero-banner.style-1 .circle-wrapper {
+        bottom: -100px
+    }
+}
+
+.breadcrumb-b{
+    position: relative;
+}
+
+.pricingtable-features {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.pricingtable-features li {
+    padding: 12px
+}
+
+.pricingtable-features li i {
+    margin: 0 3px
+}
+
+.dz-pricingtable {
+    padding: 70px 0
+}
+
+@media only screen and (max-width: 991px) {
+    .dz-pricingtable {
+        padding:40px 0
+    }
+
+    .dz-pricingtable .pricingtable-wraper {
+        justify-content: center
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dz-pricingtable {
+        padding:40px 0 10px
+    }
+}
+
+.pricingtable-wrapper {
+    overflow: hidden;
+    transition: all .2s
+}
+
+.pricingtable-wrapper.style-1 {
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    background: #fff;
+    height: 100%
+}
+
+.pricingtable-wrapper.style-1 .left-box {
+    width: 50%;
+    padding: 30px
+}
+
+.pricingtable-wrapper.style-1 .right-box {
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    border-left: 1px solid rgba(0,0,0,.1);
+    width: calc(50% + 30px);
+    display: flex;
+    flex-direction: column
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner {
+    display: flex;
+    text-align: left;
+    height: 100%
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-title {
+    margin-bottom: 15px
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-title .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 12px
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-title .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(90deg,rgba(0,0,0,.2) 50%,rgba(255,255,255,0) 0);
+    background-size: 10px 1px;
+    background-repeat: repeat-x
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-title .text {
+    margin-bottom: 0;
+    color: var(--bs-heading-color)
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-bx {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-bx .small,.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-bx small {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bs-primary);
+    margin-left: 5px;
+    transform: translateY(-2px);
+    display: inline-block
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner p {
+    font-size: 14px;
+    font-weight: 300
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-list .list-title {
+    font-size: 18px;
+    margin-bottom: 10px
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-list .pricingtable-features {
+    text-align: left;
+    list-style: none
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-list .pricingtable-features li {
+    padding: 6px 6px 6px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-list .pricingtable-features li:after {
+    content: "\f00c";
+    font-family: Font Awesome\ 6 Free;
+    font-weight: 700;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    background: #C6CBD0;
+    display: block;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    border-radius: 35px;
+    text-align: center;
+    top: 8px;
+    line-height: 18px
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-list .pricingtable-features li.active {
+    color: var(--bs-primary)
+}
+
+.pricingtable-wrapper.style-1 .pricingtable-inner .pricingtable-list .pricingtable-features li.active:after {
+    background-color: var(--bs-primary)
+}
+
+@media only screen and (max-width: 767px) {
+    .pricingtable-wrapper.style-1 .left-box,.pricingtable-wrapper.style-1 .right-box {
+        padding:20px
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pricingtable-wrapper.style-1 .pricingtable-inner {
+        flex-direction:column
+    }
+
+    .pricingtable-wrapper.style-1 .left-box,.pricingtable-wrapper.style-1 .right-box {
+        width: 100%
+    }
+
+    .pricingtable-wrapper.style-1 .right-box {
+        border-left: 0;
+        border-top: 1px solid rgba(0,0,0,.1)
+    }
+}
+
+.pricingtable-wrapper.style-2 {
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    background: var(--bs-light);
+    height: 100%
+}
+
+.pricingtable-wrapper.style-2:hover {
+    transform: translateY(-10px)
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1
+}
+
+.pricingtable-wrapper.style-2 .vertical-text {
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 0 10px 10px 0;
+    background: var(--bs-primary);
+    padding: 15px 5px;
+    position: absolute;
+    top: 20px;
+    writing-mode: tb-rl;
+    z-index: 1;
+    left: 0;
+    color: #fff;
+    font-weight: 500
+}
+
+.pricingtable-wrapper.style-2 .dz-media {
+    width: 280px;
+    min-width: 280px;
+    z-index: 1;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: -30px;
+    margin-right: 30px
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-bx {
+    font-size: 45px;
+    font-weight: 600;
+    margin: -10px 0 10px;
+    color: var(--bs-heading-color);
+    line-height: 1.4
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-bx .small,.pricingtable-wrapper.style-2 .pricingtable-bx small {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bs-body-color);
+    margin-left: 5px;
+    transform: translateY(-2px);
+    display: inline-block
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-title .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 12px
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-title .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(90deg,rgba(0,0,0,.2) 50%,rgba(255,255,255,0) 0);
+    background-size: 10px 1px;
+    background-repeat: repeat-x
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-title .text {
+    margin-bottom: 0;
+    color: var(--bs-heading-color)
+}
+
+.pricingtable-wrapper.style-2 p {
+    font-size: 14px;
+    font-weight: 300
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-list .list-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--bs-heading-color)
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-features {
+    text-align: left;
+    list-style: none;
+    margin-bottom: 20px
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-features li {
+    padding: 3px 0 3px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    color: var(--bs-body-color)
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-features li:before {
+    content: "\f109";
+    font-family: flaticon;
+    color: var(--bs-primary);
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-weight: 600
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-button {
+    margin-top: auto
+}
+
+.pricingtable-wrapper.style-2 .pricingtable-inner {
+    display: flex;
+    height: 100%
+}
+
+@media only screen and (max-width: 1380px) {
+    .pricingtable-wrapper.style-2 .dz-media {
+        width:240px;
+        min-width: 240px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pricingtable-wrapper.style-2 {
+        padding:60px 30px 30px
+    }
+
+    .pricingtable-wrapper.style-2 .dz-media {
+        display: none
+    }
+
+    .pricingtable-wrapper.style-2 .vertical-text {
+        font-size: 14px;
+        border-radius: 0 0 10px 10px;
+        padding: 8px 15px;
+        top: 0;
+        writing-mode: unset;
+        left: 30px
+    }
+}
+
+.pricingtable-wrapper.style-3 {
+    border: 1px solid rgba(var(--bs-secondary-rgb),.05);
+    border-radius: var(--radius-xl);
+    margin-left: 0!important;
+    transition: .5s
+}
+
+.pricingtable-wrapper.style-3.active,.pricingtable-wrapper.style-3:hover {
+    background-color: rgba(var(--bs-primary-rgb),.04)
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box {
+    padding: 25px 15px;
+    border-bottom: 1px solid rgba(var(--bs-secondary-rgb),.05);
+    text-align: center;
+    min-height: 70px
+}
+
+@media only screen and (max-width: 575px) {
+    .pricingtable-wrapper.style-3 .pricing-content-box {
+        min-height:auto;
+        padding: 25px
+    }
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-price .pricingtable-bx {
+    font-size: 40px;
+    margin-bottom: 25px;
+    line-height: 1
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-price .pricingtable-bx .small,.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-price .pricingtable-bx small {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bs-body-color);
+    margin-left: 5px;
+    transform: translateY(-2px);
+    display: inline-block
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-button .btn {
+    font-size: 14px;
+    padding: 15px 25px;
+    font-weight: 500
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features {
+    text-align: center
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li {
+    border-bottom: 1px solid rgba(var(--bs-secondary-rgb),.05);
+    padding: 25px 30px
+}
+
+@media only screen and (max-width: 575px) {
+    .pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li {
+        padding:20px 25px
+    }
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li:last-child {
+    border: none
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li.disable img,.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li.disable svg {
+    opacity: .1
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail {
+    background-color: var(--bs-secondary)
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box {
+    text-align: start;
+    border-bottom: 1px solid rgba(var(--bs-primary-rgb),.07)
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box .pricingtable-price .pricingtable-bx {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box .pricingtable-price .badge {
+    color: var(--bs-primary);
+    font-size: 12px;
+    background-color: rgba(var(--bs-primary-rgb),.1);
+    border-radius: 50px;
+    padding: 7px 12px;
+    font-weight: 500
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box .pricingtable-price .text {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #fff;
+    opacity: .5;
+    font-weight: 300
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricingtable-list .pricingtable-features {
+    text-align: start
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricingtable-list .pricingtable-features li {
+    color: #fff;
+    border-bottom: 1px solid rgba(var(--bs-primary-rgb),.07)
+}
+
+.pricingtable-content-wrapper .pricingtable-wrapper {
+    margin-left: -30px
+}
+
+.pricingtable-content-wrapper .content-bx {
+    margin: 0 30px 0 70px
+}
+
+@media only screen and (max-width: 1380px) {
+    .pricingtable-content-wrapper .content-bx {
+        margin:0 30px 0 0
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .pricingtable-content-wrapper .pricingtable-wrapper {
+        margin-left:0
+    }
+
+    .pricingtable-content-wrapper .content-bx {
+        margin: 0
+    }
+}
+
+.hero-banner.style-1{
+    background: #7d81f3;
+}
+
+.pricingtable-wrapper.style-3 {
+    border: 1px solid rgba(var(--bs-secondary-rgb),.05);
+    border-radius: var(--radius-xl);
+    margin-left: 0!important;
+    transition: .5s
+}
+
+.pricingtable-wrapper.style-3.active,.pricingtable-wrapper.style-3:hover {
+    background-color: rgba(var(--bs-primary-rgb),.04)
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box {
+    padding: 25px 20px;
+    border-bottom: 1px solid rgba(var(--bs-secondary-rgb),.05);
+    text-align: center;
+    min-height: 75px
+}
+
+@media only screen and (max-width: 575px) {
+    .pricingtable-wrapper.style-3 .pricing-content-box {
+        min-height:auto;
+        padding: 25px
+    }
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-price .pricingtable-bx {
+    font-size: 40px;
+    margin-bottom: 25px;
+    line-height: 1
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-price .pricingtable-bx .small,.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-price .pricingtable-bx small {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bs-body-color);
+    margin-left: 5px;
+    transform: translateY(-2px);
+    display: inline-block
+}
+
+.pricingtable-wrapper.style-3 .pricing-content-box .pricingtable-button .btn {
+    font-size: 14px;
+    padding: 15px 25px;
+    font-weight: 500
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features {
+    text-align: center
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li {
+    border-bottom: 1px solid rgba(var(--bs-secondary-rgb),.05);
+    padding: 15px 30px
+}
+
+@media only screen and (max-width: 575px) {
+    .pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li {
+        padding:20px 25px
+    }
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li:last-child {
+    border: none
+}
+
+.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li.disable img,.pricingtable-wrapper.style-3 .pricingtable-list .pricingtable-features li.disable svg {
+    opacity: .1
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail {
+    background-color: var(--bs-secondary)
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box {
+    text-align: start;
+    border-bottom: 1px solid rgba(var(--bs-primary-rgb),.07)
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box .pricingtable-price .pricingtable-bx {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box .pricingtable-price .badge {
+    color: var(--bs-primary);
+    font-size: 12px;
+    background-color: rgba(var(--bs-primary-rgb),.1);
+    border-radius: 50px;
+    padding: 7px 12px;
+    font-weight: 500
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricing-content-box .pricingtable-price .text {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #fff;
+    opacity: .5;
+    font-weight: 300
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricingtable-list .pricingtable-features {
+    text-align: start
+}
+
+.pricingtable-wrapper.style-3.pricingtable-detail .pricingtable-list .pricingtable-features li {
+    color: #fff;
+    border-bottom: 1px solid rgba(var(--bs-primary-rgb),.07)
+}
+
+
+ul.rs-features-list li{
+    display: flex;
+    align-items: baseline;
+    line-height: 18px !important;
+}
+.h-400{
+    height: 400px;
+}
+
+.hover-box:hover span {
+    color: #000000 !important;
+}
+.sec-title2 .title.title2 {
+    max-width: 100% !important;
+}

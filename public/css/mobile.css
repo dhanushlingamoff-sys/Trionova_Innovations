@@ -1,0 +1,362 @@
+.info-text{
+    width: 60%;
+}
+
+
+.info-text .title {
+    font-size: 41px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.description-mobile{
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+/* our servicess */
+.section-services {
+	color: #202020;
+	padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.section-services .header-section {
+	margin-bottom: 34px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
+}
+.box-googleplay.android{	
+    padding:30px;
+}
+.readon.lets-talk.service-detail{
+	    padding: 10px 30px 10px 30px;
+}
+
+/* .section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #ff4500;
+    border-radius: 3px;
+} */
+
+/* .section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #504f93;
+    border-radius: 3px;
+} */
+
+.section-services .header-section .description {
+	font-size: 14px;
+    color: #282828;
+}
+.section-services .single-service.first-row{
+	height: 350px;
+}
+.section-services .single-service.second-row{
+	height: 380px;
+}
+.section-services .single-service {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+	border: 1px solid #022279;
+}
+
+.section-services .single-service .content {
+	position: relative;
+	z-index: 20;
+}
+
+.section-services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: #022279;
+    /* border: 6px solid #ff3131; */
+    border: 6px solid #00E5FF;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all .6s;
+}
+
+.section-services .single-service:hover .circle-before {
+	width: 100%;
+	height: 100%;
+	transform: none;
+	border: 0;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.section-services .single-service .service-icon {
+	display: inline-block;
+	margin-bottom: 26px;
+    width: 75px;
+    height: 75px;
+    background-color: #022279;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s;
+    position: relative;
+}
+
+.section-services .single-service:hover .service-icon {
+	background-color: #fff;
+	color: #ff4500;
+}
+
+.section-services .single-service .title {
+    margin-bottom: 18px;
+	font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .title {
+	color: #fff;
+}
+
+.section-services .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .description {
+	color: #fff;
+}
+
+.section-services .single-service a {
+	position: relative;
+	font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover a {
+	color: #fff;
+}
+
+.section-services .single-service a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #ff4500;
+	transition: background-color .3s;
+}
+
+.section-services .single-service:hover a:after {
+	background-color: #fff;
+}
+
+
+.single-service .hover-img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0) translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 10;
+  object-fit: cover;
+  display: block;
+}
+
+
+.services-icon {
+  position: relative;
+}
+
+.single-service:hover .hover-img {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+
+.single-service:hover .services-icon {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.single-service:hover .services-icon .hover-img {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+}
+.services-icon {
+  position: relative; /* move this outside of :hover */
+}
+#service-details{
+top:13%;
+}
+.cost-popup{   
+	 padding: 50px 20px 50px;
+    border-radius: 18px;
+}
+	.mfp-close-btn-in .mfp-close {
+    color: #ffffff !important;
+    font-size: 28px !important;
+    background: #000000 !important;    
+	top: -0.5px !important;
+    right: 0.9% !important;
+}
+.text-blue{
+	color: #001973;
+}
+.bl-17px{
+	border-radius: 0px 17px 0 17px !important
+}
+.br-17px{
+	border-radius:17px 0px 0px 0 !important
+}
+.sec-title{
+	transition: all 0.9s ease;
+}                    
+@media screen and (max-width: 768px) {
+	.info-text{
+		width: 100%;
+		
+	}
+	.info-text .title{
+		font-size: 30px !important;
+		
+    line-height: 55px !important;
+	}
+	.parent-text{
+		padding: 13rem 0rem 5rem 0rem !important;
+	}
+	
+	.parent-text .desc{
+		font-size: 18px !important;
+	}
+	
+}
+.rs-banner.style9.mob-banner-sec .images-part img{
+    right: 7%;
+}@keyframes rotateAndMoveLeftToRight {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(100px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes rotateAndMoveRightToLeft {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-100px) rotate(-180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.horizontal.new-style {
+  height: 60px;
+  display: inline-block;
+  animation: rotateAndMoveLeftToRight 2s linear infinite;
+}
+
+.horizontal.new-style2 {
+  height: 60px;
+  display: inline-block;
+  animation: rotateAndMoveRightToLeft 15s linear infinite;
+}
+.rotated-style.mob-1{
+    height: 70px;
+}
+.rs-banner.style9 .banner-animation .bnr-animate.four.mob-4{
+    right: 7%;
+}
+.rs-banner.style9 .banner-animation .bnr-animate.four.mob-4 .vertical{
+   height: 100px;
+}
+.rs-banner.style9 .banner-content{
+    padding: 151px 0 72px !important;
+}
+.mob-chennai .horizontal{
+	height: 80px;
+}
+.ml2 .letter{
+	display: unset !important;
+}
+.br-15px{
+	border-radius: 15px;
+}
+.rs-banner.style9.seo-banner-bg{
+/* background-image: linear-gradient(100deg, #d3ddff 34%, #0043ff 100%); */
+background: #7d81f3;
+height: 630px;
+}
+
+/**/
+
+.mobile-banner-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.mobile-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mobile-banner .mobile-bg-black {
+    background: linear-gradient(to right, #000000cf, #0000001a);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}

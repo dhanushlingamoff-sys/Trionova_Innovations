@@ -1,0 +1,2162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*-------------- android popup --------------*/
+
+.popup-one .modal-body {
+  display: inline-block;
+  background: #fff;
+  padding: 0;
+  font-family: "Poppins";
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.popup-one .popup-right img {
+  width: 100%;
+  /* height    : 100%; */
+  /* object-fit: contain; */
+  /* position  : relative; */
+  /* left      : 0px; */
+  /* top       : 0px; */
+}
+
+.popup-right {
+  padding: 0;
+}
+
+.popup-one button.close span i.fa.fa-times-circle {
+  font-size: 25px;
+}
+
+.popup-one button.close {
+  position: absolute;
+right: -22px;
+    top: -21px;
+  background-color: #fff;
+  border-radius: 50px;
+  z-index: 1;
+  opacity: 1;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.popup-one button.close span img {
+  filter: invert(100%);
+}
+
+.popup-one .popup-left {
+  padding: 14px 0 0 20px;
+}
+
+.popup-one .popup-left h6 {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6fc047;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.popup-one .popup-left h4 {
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #2a2e54;
+  line-height: 35px;
+}
+
+.popup-one .pop-form label {
+  width: 100%;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.popup-one .pop-form label span {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
+.popup-one .form-group {
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 100%;
+  min-height: 70px;
+}
+
+.check-opt {
+  display: inline-block;
+  margin: 0 !important;
+  width: 29%;
+  padding: 5px 0px;
+}
+
+.modal .check-opt input {
+  float: left;
+  width: auto !important;
+  margin-right: 10px;
+}
+
+.modal .check-opt p {
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  /* margin-left: 8px; */
+}
+
+.form-group textarea {
+  width: 90%;
+  padding: 6px;
+  border: 1px solid #bcbcbc;
+  outline: none;
+  resize: none;
+  height: 68px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.form-group textarea::placeholder {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.form-group textarea:focus {
+  box-shadow: none;
+}
+
+.form-group.two-col.y-mail {
+  margin-left: 26px;
+}
+
+/* .check-opt input:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+} */
+
+.modal .check-opt input[type="radio"] {
+  appearance: none;
+  width: 13px !important;
+  height: 13px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 2px;
+  cursor: pointer;
+  margin-right: 3px;
+  margin-top: 4px;
+}
+
+.modal .check-opt input[type="radio"]:checked {
+  background-color: #6fc047;
+  border: 2px solid #6fc047;
+}
+
+/* .check-opt input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+     border: 2px solid white; 
+} */
+
+/* .check-opt input:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #a2d142;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #a2d142;
+} */
+
+.check-opt input:checked + p {
+  color: #6fc047;
+}
+
+.popup-one .form-group .check-opt:last-child {
+  margin-right: 0;
+}
+
+.modal-dialog.popup-one {
+  margin-bottom: 0;
+}
+
+.modal-dialog.popup-one {
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  margin: 0 auto;
+}
+
+div#androidmodel .popup-one .popup-right img {
+  object-fit: contain;
+  position: relative;
+  left: 0px !important;
+  top: 0px !important;
+}
+
+div#androidmodel .modal-dialog.popup-one {
+  height: 474px;
+  border-radius: 22px;
+}
+
+.modal .intl-tel-input.separate-dial-code .selected-flag {
+  border-bottom: 1px solid #d5d5d5a8;
+}
+
+.modal .intl-tel-input input#demo {
+  font-size: 13px !important;
+  padding-left: 23px;
+}
+
+.modal .flag-container {
+  height: 40px;
+  border: none !important;
+  border-radius: 0px !important;
+  background: #fff !important;
+  border-bottom: 1px solid rgba(60, 55, 67, 0.12);
+  padding-left: 10px !important;
+}
+
+.modal .intl-tel-input.separate-dial-code .selected-dial-code {
+  /*padding-left: 8px !important;*/
+  font-size: 13px;
+  font-family: "Poppins" !important;
+  font-weight: 600 !important;
+}
+
+.modal .intl-tel-input .selected-flag {
+  padding: 0 !important;
+  background-color: #fff !important;
+}
+
+/*-------------- End android popup --------------*/
+
+/*-------------- Web popup --------------*/
+
+div#webmodel .popup-one button.close span img {
+  filter: invert(0);
+}
+
+div#webmodel .popup-one {
+  width: 800px;
+  background: url(../new-images/popup-contact/web-popup-banner.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div#webmodel .modal-body {
+  padding: 18px 89px 0px 86px;
+  background: transparent;
+}
+
+div#webmodel .form-group textarea:focus {
+  box-shadow: none;
+}
+
+div#webmodel .text-right {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+div#webmodel .text-right h6 {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+div#webmodel .text-right h4 {
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 6px 0 11px 0;
+  font-size: 30px;
+  color: #6fc047;
+}
+
+div#webmodel .popup-right {
+  padding: 0px 0 0 0;
+}
+
+div#webmodel .popup-one .popup-left {
+  padding-top: 15px;
+  padding-left: 18px;
+}
+
+div#webmodel .popup-one .form-group.two-col {
+  width: 50%;
+  height: 38px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+div#webmodel .popup-one .popup-right img {
+  height: 356px;
+  margin: 25px 0;
+}
+
+div#webmodel .check-opt {
+  margin: 1px 4px 0px 0;
+}
+
+div#webmodel button.close {
+  right: 68px;
+  border-color: black;
+  width: 24px;
+  height: 24px;
+}
+
+div#webmodel button.close span {
+  color: #000;
+}
+
+div#webmodel .send-meg {
+  display: inline-block;
+  width: 44%;
+  float: right;
+}
+
+div#webmodel .form-group textarea {
+  height: 64px;
+}
+
+div#webmodel .send-meg button {
+  padding: 9px 8px 9px 25px;
+}
+
+div#webmodel .send-meg button:hover {
+  border-radius: 25px;
+  padding: 6px 25px 6px 8px;
+}
+
+div#webmodel .send-meg button:hover i {
+  left: 101px;
+}
+
+.modal .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input,
+.modal
+  .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3
+  input[type="text"],
+.modal
+  .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3
+  input[type="tel"] {
+  padding-left: 95px;
+}
+
+div#webmodel .check-opt input[type="radio"] {
+  margin-top: 7px;
+}
+
+/*-------------- End Web popup --------------*/
+
+/*-------------- Mobile popup --------------*/
+
+div#mobilemodel .popup-one {
+  width: 810px;
+  overflow: hidden;
+}
+
+div#mobilemodel .modal-dialog.popup-one {
+  height: 500px;
+}
+
+/* div#mobilemodel .popup-one .modal-body {
+    border-radius: 15px;
+} */
+
+.mobile-left {
+  background: #333;
+  position: relative;
+  left: -56px;
+  padding: 20px;
+  height: 390px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 406px;
+  margin-bottom: 20px;
+}
+
+div#mobilemodel .popup-one {
+  overflow: initial;
+}
+
+div#mobilemodel span i.fa.fa-times-circle {
+  color: white;
+}
+
+div#mobilemodel .popup-one .popup-right img {
+  object-fit: contain;
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+div#mobilemodel .mobile-left h6 {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+div#mobilemodel .mobile-left p {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* div#mobilemodel .popup-one .modal-body {
+    padding: 10px;
+} */
+
+div#mobilemodel .popup-one .popup-left {
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+div#mobilemodel button.close {
+  border-color: #6d2b8f;
+  width: 23px;
+  height: 23px;
+}
+
+div#mobilemodel button.close span {
+  color: #000;
+}
+
+div#mobilemodel .mobile-left {
+  background: none;
+  position: relative;
+  left: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+div#mobilemodel button.close span {
+  color: #6d2b8f;
+}
+
+div#mobilemodel h6 {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #616566;
+  margin-bottom: 0px;
+}
+
+div#mobilemodel h2 {
+  font-weight: 700;
+  /* margin    : 15px 0; */
+  margin-top: 0px;
+  font-size: 30px;
+  color: #4f46d2;
+  margin-bottom: 0;
+}
+
+div#mobilemodel h2::before {
+  content: " ";
+  position: absolute;
+  background-image: url(../new-images/popup-contact/mobile-text.png);
+  width: 100%;
+  height: 81px;
+  background-repeat: no-repeat;
+  top: 34px;
+  left: 13px;
+}
+
+div#mobilemodel .popup-one .pop-form label {
+  line-height: 17px;
+  margin-bottom: 0;
+}
+
+div#mobilemodel .popup-one .form-group {
+  margin-bottom: 6px;
+}
+
+div#mobilemodel h4 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #2a2e54;
+  line-height: 22px;
+}
+
+div#mobilemodel .check-opt input[type="radio"] {
+  margin-top: 7px;
+}
+
+div#mobilemodel #g-recaptcha-2 {
+  height: 40px;
+  margin: 0;
+}
+
+div#mobilemodel .popup-one .popup-left {
+  padding-bottom: 13px;
+}
+
+/*-------------- End Mobile popup --------------*/
+
+/*------------- Flutter popup ---------------*/
+
+div#fluttermodel .popup-one button.close span img {
+  filter: invert(0);
+}
+
+div#fluttermodel .modal-body {
+  background: transparent;
+}
+
+/* div#fluttermodel .flutter-text {
+    padding-top: 26px;
+} */
+
+div#fluttermodel .popup-left {
+  background: #fff;
+  padding: 68px 12px 0 12px;
+  height: 495px;
+  border-radius: 20px;
+}
+
+div#fluttermodel .popup-right {
+  background: url(../new-images/popup-contact/flutter-back.png);
+  height: 448px;
+  margin-top: 33px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #a146d8;
+  background-position: 0;
+}
+
+div#fluttermodel .popup-left .flutter-text {
+  display: none;
+}
+
+div#fluttermodel .popup-right .mobile-left {
+  background: transparent;
+  left: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+div#fluttermodel .mobile-left img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+div#fluttermodel h6 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+div#fluttermodel h4 {
+  margin: 0;
+  font-size: 30px;
+  color: #1b1d36;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+div#fluttermodel button.close {
+  border-color: #444;
+  width: 23px;
+  height: 23px;
+}
+
+div#fluttermodel button.close span {
+  color: #282828;
+}
+
+div#fluttermodel .two-col.y-mail {
+  margin-left: 25px;
+}
+
+div#fluttermodel .check-opt {
+  margin: 10px 4px 0px 0;
+}
+
+div#fluttermodel .check-opt:last-child {
+  margin-right: 0;
+}
+
+div#fluttermodel .send-meg {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+span.flutter-ball {
+  position: absolute;
+  top: 115px;
+  left: 94%;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+div#fluttermodel .check-opt input[type="radio"] {
+  margin-top: 5px;
+}
+
+/* .popup-one span.flutter-ball img {
+    width: 57px;
+} */
+
+/*------------- End Flutter popup ---------------*/
+
+/*------------------ IOS App Popup --------------*/
+
+div#iosmodel .popup-one button.close span img {
+  filter: invert(0);
+}
+
+div#iosmodel .check-opt input[type="radio"] {
+  appearance: none;
+  width: 15px !important;
+  height: 15px;
+  border: 2px solid #a7a7a7;
+  border-radius: 50%;
+  background-clip: content-box !important;
+  padding: 2px;
+  cursor: pointer;
+}
+
+div#iosmodel .check-opt input:checked + p {
+  color: #22243b;
+}
+
+div#iosmodel .check-opt input[type="radio"]:checked {
+  background-color: #22243b;
+  border: 2px solid #22243b;
+}
+
+div#iosmodel .modal-body {
+  background: url(../new-images/popup-contact/ios-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 5px 0px;
+}
+
+div#iosmodel .mobile-left {
+  background: transparent;
+  left: 41px;
+  margin: 0;
+}
+
+div#iosmodel .popup-left {
+  background: transparent;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+div#iosmodel .popup-left .pop-form {
+  margin: 32px 32px 32px 0px;
+  background: #ffffff;
+  padding: 20px 12px;
+  border-radius: 20px;
+}
+
+div#iosmodel .popup-one {
+  width: 810px;
+}
+
+div#iosmodel .popup-left .pop-form input,
+div#iosmodel .popup-left .pop-form textarea {
+  background: transparent;
+  color: #22243b;
+  font-weight: 600;
+}
+
+div#iosmodel .ios-text .mobile-left {
+  display: none;
+}
+
+div#iosmodel h6 {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666866;
+}
+
+div#iosmodel h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #22243b;
+  line-height: 37px;
+  margin: 0;
+}
+
+div#iosmodel h4 span {
+  display: block;
+}
+
+div#iosmodel button.close {
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  border-color: #22243b;
+}
+
+div#iosmodel button.close span {
+  font-size: 17px;
+  color: #22243b;
+}
+
+div#iosmodel .modal-body:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../new-images/popup-contact/extra-img.png);
+  top: 0;
+  background-size: 825px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#iosmodel .send-meg button {
+  background: #22243b;
+  border: 1px solid #030412;
+}
+
+div#iosmodel .check-opt {
+  margin: 3px 4px 0px 0;
+}
+
+div#iosmodel .send-meg {
+  margin-left: 10px;
+}
+
+/*------------------End IOS App Popup --------------*/
+
+/*------------------IoT App Popup --------------*/
+
+div#itmodel .modal-body {
+  background: url(../new-images/popup-contact/iot-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* padding         : 44px 0px; */
+  padding-bottom: 15px;
+  border-radius: 30px;
+}
+
+div#itmodel .modal-body .pop-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 7px 5px 4px #7c7b7b9e;
+}
+
+div#itmodel .popup-one .popup-left {
+  padding-left: 28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0;
+}
+
+div#itmodel .popup-one {
+  width: 810px;
+  overflow: hidden;
+}
+
+div#itmodel .form-text {
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+div#itmodel .form-text h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  color: #6fc047;
+}
+
+div#itmodel .form-text h3 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: #6fc047;
+}
+
+div#itmodel span i.fa.fa-times-circle {
+  color: white;
+}
+
+div#itmodel .form-text h3 sup {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6fc047;
+  padding: 5px;
+}
+
+div#itmodel h6 {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #898989;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+div#itmodel .modal-body::before {
+  content: " ";
+  position: absolute;
+  background-image: url(../new-images/popup-contact/circle.png);
+  width: 22%;
+  height: 33%;
+  background-repeat: no-repeat;
+  top: -80px;
+  left: -75px;
+  z-index: 100;
+}
+
+div#itmodel div#g-recaptcha-2 {
+  height: 32px;
+}
+
+div#itmodel .check-opt {
+  display: inline-block;
+  margin: 3px 3px 7px 0;
+}
+
+/*------------Devops css --------------------*/
+
+div#devmodel .form-text h6 {
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6fc047;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+div#devmodel .form-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: #2a2e54;
+  margin-bottom: 10px;
+}
+
+div#devmodel .send-meg {
+  text-align: right;
+  margin-top: 0px;
+}
+
+div#devmodel .form-text h2 span {
+  color: #9f59be;
+}
+
+div#devmodel div#g-recaptcha-2 {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  height: 18px;
+}
+
+/* div#devmodel .popup-one .popup-left {
+    padding-bottom: 9px;
+    padding-left  : 15px;
+} */
+
+div#devmodel .check-opt input[type="radio"] {
+  margin-top: 6px;
+}
+
+/*-------------on-demand-------------*/
+
+div#on-demandmodel .popup-one .popup-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  left: 7px;
+  top: 13px;
+}
+
+div#on-demandmodel span i.fa.fa-times-circle {
+  color: black;
+}
+
+div#on-demandmodel .popup-one .popup-left h6 {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #616566;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+div#on-demandmodel .popup-one .popup-left h2 {
+  font-size: 30px;
+  color: #9fceef;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+div#on-demandmodel .popup-one .popup-left h2 span {
+  color: #2a2e54;
+}
+
+div#on-demandmodel .popup-one button.close span img {
+  filter: invert(0);
+}
+
+div#on-demandmodel .popup-recaptcha {
+  height: 20px;
+}
+
+/*-------------- Case-study-----------------*/
+
+div#case-studymodel .popup-one button.close span img {
+  filter: invert(0);
+}
+
+div#case-studymodel span i.fa.fa-times-circle {
+  color: black;
+}
+
+div#case-studymodel .popup-one .popup-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  left: 14px;
+  top: 28px;
+}
+
+div#case-studymodel .popup-one .popup-left h2 {
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+div#case-studymodel .popup-one .popup-left h3 {
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+div#case-studymodel .popup-one .popup-left h3 span {
+  color: #f27aa8;
+}
+
+div#case-studymodel select#app {
+  border: 0;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #d5d5d5a8;
+  outline: none;
+  background: none;
+}
+
+div#case-studymodel select#app option {
+  font-weight: 700;
+}
+
+div#case-studymodel div#g-recaptcha-2 {
+  height: 32px;
+}
+
+.popup-recaptcha div {
+  margin: 8px 0 0 0;
+  height: 60px !important;
+}
+
+.popup-recaptcha {
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+}
+
+/*------------android--------------*/
+
+div#androidmodel #g-recaptcha-2 {
+  height: 40px;
+  margin: 0;
+}
+
+.en-but a {
+  cursor: pointer;
+}
+
+.en-but a:hover {
+  color: #ffffff;
+}
+
+.modal .form-control:focus,
+.modal .form-control:focus:hover {
+  border: none !important;
+  border-bottom: 1px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+.referral_error {
+  width: 100%;
+  float: left;
+}
+
+/*-------------------Popup Success popup-------------------*/
+
+#success-popup-loader {
+  background-color: #00000087;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+}
+
+#success-popup-loader img {
+  width: 100px;
+  top: 50%;
+  position: relative;
+}
+
+#success-popup-message .modal-content {
+  float: left;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 15px rgb(191 182 182 / 30%);
+}
+
+#success-popup-message .modal-content .modal-header {
+  padding: 15px 15px 8px 15px;
+  border: none !important;
+}
+
+#success-popup-message .success-popup {
+  text-align: center;
+}
+
+#success-popup-message .modal-content .modal-header h4.modal-title {
+  color: #333333c7;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 700 !important;
+}
+
+#success-popup-message .modal-content .modal-body {
+  padding: 0px 15px 30px 15px;
+  text-align: center;
+}
+
+#success-popup-message .modal-content .modal-body p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0px 100px;
+  font-weight: 500;
+  color: #000000;
+}
+
+#success-popup-message .modal-dialog {
+  margin-top: 150px;
+}
+
+/*-------------uber-eatsmodel-------------*/
+
+div#uber-eatsmodel .popup-one .popup-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  left: 7px;
+  top: 13px;
+}
+
+div#uber-eatsmodel span i.fa.fa-times-circle {
+  color: black;
+}
+
+div#uber-eatsmodel .popup-one .popup-left h6 {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+div#uber-eatsmodel .popup-one .popup-left h2 {
+  font-size: 30px;
+  color: #00b14f;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+div#uber-eatsmodel .popup-one .popup-left h2 span {
+  color: #000;
+}
+
+div#uber-eatsmodel .popup-one button.close span img {
+  filter: invert(0);
+}
+
+div#uber-eatsmodel .popup-recaptcha {
+  height: 20px;
+}
+
+div#uber-eatsmodel .popup-one .pop-form label {
+  color: #000;
+}
+
+/************************* Common Start **************************/
+.popup-one {
+  width: 100%;
+  /* overflow   : hidden; */
+  /* height     : 580px; */
+}
+
+.popup-one .popup-left h6 {
+  color: #000;
+}
+
+.send-meg {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+}
+
+.send-meg button {
+  padding: 18px 15px 18px 26px;
+  background: #6fc04700;
+  border: 1px solid #000000;
+  color: #000;
+  outline: none;
+  width: 84%;
+  font-weight: 500;
+  font-size: 13px;
+  transition: 0.5s;
+  position: relative;
+  line-height: 12px;
+  border-radius: 3px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+.send-meg button i {
+  /*font-size: 18px;
+    */
+  position: absolute;
+  border-radius: 50%;
+  top: 17px;
+  transition: 0.5s;
+  left: 32px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.send-meg button:hover {
+  padding: 18px 40px 18px 0;
+  border-radius: 25px;
+}
+
+.send-meg button:hover i {
+  left: 150px;
+}
+
+.popup-one .pop-form input {
+  width: 100%;
+  height: 40px;
+  padding: 0px 0 0px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0.443px solid #bcbcbc;
+  border-radius: 3.541px;
+  outline: none;
+  box-shadow: none;
+  -webkit-border-radius: 3.541px;
+  -moz-border-radius: 3.541px;
+  -ms-border-radius: 3.541px;
+  -o-border-radius: 3.541px;
+}
+
+.popup-one .pop-form input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(0, 0, 0) !important;
+}
+
+.popup-one .form-group.two-col {
+  width: 46%;
+  float: left;
+}
+
+.dev-left {
+  position: relative;
+}
+
+.dev_left_cont {
+  /* position: absolute; */
+  padding: 40px;
+  top: 35px;
+  left: 43px;
+  z-index: 1;
+  color: #000000;
+}
+
+.popup-left .form-text {
+  display: none;
+}
+
+.popup-left .form-text h6,
+.dev_left_cont h6 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.popup-left .form-text h4,
+.dev_left_cont h4 {
+  color: #fff;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.pop-form .phone_number input {
+  margin: 0px 0 0 10px;
+  width: 91%;
+  padding-left: 107px !important;
+}
+
+.bottoms_headers {
+  display: flex;
+  width: 100%;
+  margin: 0px 0;
+  padding: 0 15px;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.bottoms_headers h4 {
+  color: #000;
+  font-size: 20.59px;
+  font-weight: 600;
+  line-height: 29px;
+  margin: 18px 0 6px 0;
+  width: 305;
+}
+
+.cap_sub {
+  margin-top: 0px;
+}
+
+.flex_rowed {
+  display: flex;
+  width: 91%;
+  gap: 25px;
+}
+
+.iti__flag-container {
+  position: unset !important;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  border: 1px solid #bcbcbc !important;
+  height: 40px !important;
+  border-radius: 3px;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+  padding: 0 0 0 12px !important;
+}
+
+.iti input,
+.iti input[type="text"],
+.iti input[type="tel"] {
+  margin-top: 1px !important;
+}
+
+.iti__country-list {
+  width: 350px !important;
+  overflow-x: hidden !important;
+  padding: 10px 0 !important;
+}
+
+.ph_flex {
+  display: flex;
+}
+
+/************************ On-demand App Development Start *************************/
+.popup-left .form-text h4 span,
+.dev_left_cont h4 span {
+  color: #0092ff;
+  font-weight: 700;
+}
+
+.dev_left_cont p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 52.199px;
+  text-transform: lowercase;
+}
+
+.dev_left_cont img {
+  position: absolute;
+  top: 109px;
+  left: 189px;
+  width: 36.914px !important;
+}
+
+.bottoms_headers h4 span {
+  color: #0092ff;
+}
+
+/************************ On-demand App Development Start *************************/
+
+/* ********************* Mobile App Development Start********************* */
+
+.mobile_app h4 span {
+  color: #fba602;
+}
+
+/* ********************* Mobile App Development End********************* */
+
+/* ********************* food-modal Start********************* */
+
+#food-modal .dev_left_cont h6 {
+  color: #000;
+}
+#food-modal .dev_left_cont h4 span {
+  color: #000000;
+}
+
+/* ********************* food-modal End********************* */
+
+/* ********************* Mobile App Development Start********************* */
+
+.ios_app h4 span {
+  color: #0092ff;
+}
+
+/* ********************* Mobile App Development End********************* */
+
+/* ********************* Web Development Start********************* */
+
+.dev_left_cont.devops,
+.dev_left_cont.webdev {
+  top: unset;
+  bottom: 0;
+}
+
+/* ********************* Web Development End********************* */
+
+/* ********************* DevOps Start********************* */
+
+.devops h4 span {
+  color: #fba602;
+}
+
+.dev_left_cont.devops {
+  top: unset;
+  bottom: 0;
+}
+
+/* ********************* Devops End********************* */
+/* ********************* DevOps Start********************* */
+
+.intenet h4 span {
+  color: #d99024;
+}
+
+/* ********************* Devops End********************* */
+/* ********************* Potentialmeet Start********************* */
+
+#modalrform .popup-one {
+  /* overflow: hidden; */
+  height: auto;
+}
+
+#modalrform .popup-one .popup-left {
+  padding: 28px 40px 0 40px;
+}
+
+#modalrform .pop-form .phone_number input {
+  width: 80%;
+}
+
+#modalrform .form-group textarea {
+  width: 100%;
+  height: 70px;
+}
+
+#modalrform .send-meg button {
+  width: 150px;
+  margin: 0;
+}
+
+#modalrform .form-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#modalrform .form-group .input_logo {
+  position: absolute;
+  left: 8px;
+  top: 34px;
+}
+
+#modalrform .form-group .input_logo_phone {
+  left: 90px;
+  top: 32px;
+}
+
+#modalrform .popup-one .pop-form input {
+  padding: 0px 0 0px 30px;
+}
+
+#modalrform .form-group textarea {
+  padding: 8px 0 0px 30px;
+}
+
+.attact_submit {
+  display: flex;
+  margin-top: 28px;
+  gap: 20px;
+}
+
+#modalrform .attact_submit .form-group .input_logo {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+#modalrform .attact_submit .form-group input {
+  padding: 8px 0 0px 30px;
+}
+
+#modalrform .update_file {
+  border: 1px solid #000000;
+  height: 40px;
+  border-radius: 3px;
+  padding: 8px 30px;
+}
+
+#modalrform .popup-one .modal-body {
+  display: block;
+}
+#modalrform .modal-header {
+  border: none;
+  padding: 0;
+  padding-bottom: 15px;
+}
+#modalrform .modal-footer {
+  padding: 15px;
+  text-align: left;
+  border-top: none;
+}
+#modalrform .submit-contact-button .btn {
+  background: transparent;
+  padding: 10px 35px;
+}
+#modalrform .submit-contact-button .btn:focus {
+  outline: none;
+}
+#modalrform .form-submits .grouo-control input.form-control:focus {
+  outline: none;
+}
+
+/* File Upload Start */
+
+.file-upload {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 5px 0;
+  max-width: 55%;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.file-upload .file-upload-select {
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.file-upload .file-upload-select .file-select-button {
+  display: inline-block;
+}
+
+.file-upload .file-upload-select .file-select-name {
+  display: inline-block;
+  padding: 10px 0 0 30px;
+}
+
+.file-upload .file-upload-select input[type="file"] {
+  display: none;
+}
+
+span.input_logo_plus {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/* File Upload End */
+
+/* ********************* Potentialmeet End********************* */
+
+/************************* Common End **************************/
+
+/*-------------- Responsive -----------------*/
+
+@media screen and (max-width: 991px) {
+  div#iosmodel .ios-text .mobile-left {
+    display: block;
+    height: 100px;
+    left: 0;
+    width: 300px;
+  }
+
+  div#itmodel .form-text h3 sup {
+    font-size: 30px;
+    font-weight: 700;
+    color: #6fc047;
+    padding: 5px;
+    top: 0 !important;
+  }
+
+  div#itmodel .form-text h2 {
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  div#itmodel .form-text h3 {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 8px;
+  }
+
+  div#webmodel .text-right {
+    width: 100%;
+    float: right;
+    text-align: left;
+    padding-top: 25px;
+  }
+
+  .popup-one .popup-left h6 {
+    margin-bottom: 10px;
+  }
+
+  .popup-one {
+    width: 92%;
+    overflow: hidden;
+  }
+
+  div#mobilemodel span i.fa.fa-times-circle {
+    color: #4f46d2;
+  }
+
+  div#mobilemodel .popup-one {
+    width: 97%;
+  }
+
+  .popup-one .popup-right {
+    display: none;
+  }
+
+  div#itmodel .popup-one .popup-left {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  .popup-one .popup-left h4 {
+    line-height: 22px;
+  }
+
+  .popup-one .form-group.two-col {
+    width: 60% !important;
+  }
+
+  .form-group.two-col.y-mail {
+    margin-left: 0;
+  }
+
+  .check-opt {
+    margin: 10px 20px 0px 0;
+  }
+
+  .popup-one button.close {
+    border-color: #000;
+  }
+
+  .popup-one button.close span {
+    color: #000;
+  }
+
+  div#webmodel button.close {
+    right: 7px;
+  }
+
+  div#webmodel .modal-body {
+    background: #fff;
+    padding: 0;
+  }
+
+  div#webmodel .popup-one .popup-left {
+    padding-top: 23px;
+  }
+
+  div#webmodel .popup-right {
+    padding: 0px 0 0 14px;
+  }
+
+  div#mobilemodel .mobile-left {
+    display: none;
+  }
+
+  div#fluttermodel .popup-left .flutter-text {
+    display: block;
+  }
+
+  div#fluttermodel .popup-left .flutter-text h6 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6fc047;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  div#fluttermodel .popup-left h4 {
+    margin: 10px 0;
+  }
+
+  div#fluttermodel .send-meg {
+    margin-top: 0px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  div#fluttermodel .popup-left .flutter-text {
+    padding-top: 0px;
+  }
+
+  div#fluttermodel .popup-right {
+    display: none;
+  }
+
+  div#fluttermodel .popup-left {
+    padding: 15px;
+    height: auto;
+  }
+
+  div#fluttermodel div#g-recaptcha-2 {
+    height: 32px;
+  }
+
+  div#fluttermodel .two-col.y-mail {
+    margin-left: 0;
+  }
+
+  div#fluttermodel .check-opt {
+    margin: 10px 20px 0px 0;
+  }
+
+  div#iosmodel .popup-one {
+    width: 97%;
+  }
+
+  div#iosmodel .popup-right,
+  div#iosmodel .modal-body:before {
+    display: none;
+  }
+
+  div#iosmodel .modal-body {
+    background: #fff;
+    padding: 0;
+  }
+
+  div#iosmodel .popup-left .pop-form {
+    margin: 0;
+  }
+
+  div#itmodel .popup-one {
+    width: 97%;
+    overflow: hidden;
+  }
+
+  div#itmodel .form-text {
+    float: left;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  div#itmodel .modal-body::before {
+    content: none;
+  }
+
+  div#itmodel .modal-body {
+    background: transparent;
+  }
+
+  div#itmodel .modal-body .pop-form {
+    border-radius: 20px;
+    box-shadow: unset;
+    padding: 20px 10px;
+  }
+
+  .popup-one button.close span img {
+    filter: invert(0);
+  }
+
+  div#androidmodel .modal-dialog.popup-one {
+    height: auto;
+  }
+
+  div#webmodel .popup-one .form-group.two-col {
+    height: 41px;
+    position: relative;
+  }
+
+  div#webmodel #error_popupmsg {
+    position: absolute;
+    top: 39px;
+  }
+
+  div#webmodel .send-meg {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .popup-recaptcha {
+    transform: scale(0.65) !important;
+    -webkit-transform: scale(0.65) !important;
+    transform-origin: 0 0 !important;
+    -webkit-transform-origin: 0 0 !important;
+  }
+
+  div#webmodel .send-meg {
+    text-align: center;
+    width: 95%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  div#iosmodel div#g-recaptcha-2 {
+    height: 32px;
+  }
+
+  div#iosmodel .send-meg,
+  div#itmodel .send-meg {
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  div#devmodel .popup-one {
+    width: 97%;
+    height: auto;
+  }
+
+  div#devmodel .send-meg {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  div#on-demandmodel .send-meg {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  div#uber-eatsmodel .send-meg {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  div#case-studymodel .send-meg {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .modal .check-opt {
+    margin: 0px 40px 0px 0;
+    height: 14px;
+    padding: 0px;
+    line-height: 6px;
+  }
+
+  .popup-one .modal-body {
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 543px;
+  }
+  #modalrform .popup-one .modal-body {
+    height: auto;
+  }
+
+  .contant_message_form_part .info_col li {
+    min-height: 100px;
+  }
+
+  #popupreferral_error {
+    width: 100%;
+    float: left;
+  }
+
+  div#androidmodel .check-opt input[type="radio"] {
+    margin-top: 5px;
+  }
+
+  div#androidmodel .check-opt {
+    line-height: 22px;
+    margin: 6px 40px 0px 0;
+  }
+
+  div#on-demandmodel .check-opt input[type="radio"] {
+    margin-top: 5px;
+  }
+
+  div#on-demandmodel .check-opt {
+    line-height: 22px;
+    margin: 6px 40px 0px 0;
+  }
+
+  div#uber-eatsmodel .check-opt input[type="radio"] {
+    margin-top: 5px;
+  }
+
+  div#uber-eatsmodel .check-opt {
+    line-height: 22px;
+    margin: 6px 40px 0px 0;
+  }
+
+  div#case-studymodel .check-opt input[type="radio"] {
+    margin-top: 5px;
+  }
+
+  div#case-studymodel .check-opt {
+    line-height: 22px;
+    margin: 6px 40px 0px 0;
+  }
+
+  #success-popup-message .modal-dialog {
+    width: 100%;
+  }
+
+  /************************ New Update Start *************************/
+  /************************ On-demand App Development Start *************************/
+
+  .popup-left .form-text h4 br,
+  .dev_left_cont h4 span {
+    display: none;
+  }
+
+  .popup-left .form-text {
+    display: block;
+  }
+
+  .bottoms_headers {
+    display: none;
+  }
+
+  .popup-left .form-text h4,
+  .dev_left_cont h4 {
+    color: #000000;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .popup-one .popup-left {
+    padding: 45px;
+  }
+
+  .flex_rowed {
+    width: 98%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .form-group textarea {
+    width: 100%;
+    height: 90px;
+  }
+
+  .send-meg button {
+    width: 140px;
+  }
+
+/*  .purpose_radio {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+  }*/
+
+  .popup-one .form-group {
+    margin-bottom: 20px;
+    min-height: auto;
+    width: 92%;
+  }
+
+  .iti--separate-dial-code .iti__selected-flag {
+    height: 43px !important;
+  }
+
+  .popup-one .pop-form input {
+    width: 100%;
+    height: 44px;
+  }
+
+  .popup-one .pop-form label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* potentioa */
+
+  #modalrform .popup-one .popup-left {
+    padding: 28px 40px 28px 40px;
+  }
+
+  .popup-one button.close {
+    right: 0;
+    top: 0;
+  }
+  #modalrform .popup-one button.close {
+    right: 12px;
+    top: 12px;
+  }
+
+  /************************ On-demand App Development End *************************/
+  /************************ Potentialmeet End *************************/
+  #modalrform .Potentialmeet h6 {
+    color: #000 !important;
+  }
+
+  #modalrform .Potentialmeet h4 br {
+    display: none;
+  }
+
+  #modalrform .pop-form input {
+    width: 100%;
+  }
+
+  #modalrform .pop-form .phone_number input {
+    width: 90%;
+  }
+
+  /************************ Potentialmeet Start *************************/
+
+  /************************ New Update End *************************/
+  
+  .modal .check-opt input[type="radio"] {{
+	  margin-top: -4px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #success-popup-message .modal-body {
+    margin-top: 0px !important;
+    line-height: 20px !important;
+    float: left;
+    width: 100%;
+  }
+}
+
+/************************ New Update Start *************************/
+/************************ On-demand App Development Start *************************/
+
+@media (width<=678px) {
+  .pop-form .phone_number input {
+    margin: -4px 0 0 0 !important;
+    padding: 0 0 0 84px;
+  }
+
+  .iti--separate-dial-code .iti__selected-flag {
+    border: none !important;
+  }
+
+  #modalrform .pop-form .phone_number input {
+    width: 100%;
+    padding: 0px 0 0px 114px;
+  }
+
+  .pop-form .phone_number label {
+    position: relative;
+    top: 0;
+  }
+
+  .popup-one .form-group.two-col {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  /* .popup-one .popup-left {
+        padding: 5px;
+    } */
+
+  .cap_sub {
+    margin-top: 0px;
+    width: 91%;
+    display: inline-block;
+  }
+  .send-meg button {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (width<=480px) {
+  .popup-left .form-text h4,
+  .dev_left_cont h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .check-opt {
+    display: inline-block;
+    margin: 0 !important;
+    width: 40%;
+  }
+
+  .popup-one .pop-form input {
+    width: 100%;
+    height: 44px;
+  }
+  .intl-tel-input.allow-dropdown {
+    width: 98%;
+  }
+
+  .form-group textarea {
+    width: 98%;
+    height: 90px;
+  }
+
+  .popup-one .popup-left {
+    padding: 9px 0 0 28px;
+  }
+  .send-meg {
+    width: 72%;
+  }
+
+  /* .send-meg button {
+        width: 60%;
+    } */
+
+  .send-meg button i {
+    /*font-size: 18px;
+        */
+    position: absolute;
+    border-radius: 50%;
+    top: 17px;
+    transition: 0.5s;
+    left: 34px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  .send-meg button:hover {
+    border-radius: 25px;
+    padding: 10px 32px 9px 15px;
+  }
+
+  .send-meg button:hover i {
+    left: 120px;
+  }
+}
+
+/************************ On-demand App Development End *************************/
+/************************ New Update End *************************/
+
+/*-------------- End Responsive -----------------*/
+.modal-header .btn-close{
+  display: none !important;
+}
+
+
+.hsfc-Step .hsfc-Step__Content.hsfc-Step .hsfc-Step__Content{
+  padding: opx !important;
+}
+.popup-one .modal-body{
+  width: 100% !important;
+}
+

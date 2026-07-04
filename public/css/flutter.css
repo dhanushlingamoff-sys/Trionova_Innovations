@@ -1,0 +1,260 @@
+.rs-banner.style9 {
+    /* background: url(../images/flutter/banner-bg.png) !important;  */
+       background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+        height: 633px;
+    background: #7d81f3;
+}
+.rs-banner.style9 .images-part img {
+    position: relative;
+    right: -1%;
+    max-width: 100%;
+    transform: translateY(20%);
+    height: 500px;
+}
+.moving_animation{
+        animation: moving_object 6s infinite linear;
+    width: 100%;
+}
+
+@keyframes moving_object {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sec-title2 .title.flu-dev {
+    max-width: 573px;
+}
+
+.back-effect img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.back-effect {
+    position: absolute;
+    animation-name: bobbingAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    left:3%
+}
+
+.enpower-det {
+    width: 100%;
+    padding: 40px 0 0;
+    height: 460px
+}
+
+.en-left {
+    /* width: 35%; */
+    /* float: left; */
+    position: relative
+}
+
+.pro-pic {
+    position: absolute;
+    left: 54px;
+    bottom: 9px
+}
+
+.en-right {
+    /* width: 65%; */
+    /* float: right; */
+    text-align: right;
+    position: relative
+}
+
+.en-right h3 {
+    font-size: 45px;
+    line-height: 57px;
+    /* font-family: Poppins!important; */
+    font-weight: 900!important;
+    color: #22243b;
+    padding-left: 85px
+}
+
+.en-but {
+    margin-top: 35px
+}
+
+.en-but a {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 700;
+    box-shadow: 0 9px 10px 0 rgba(0,0,0,.16);
+    background-color: #6fc047;
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.en-but a:hover {
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 25px;
+    padding: 14px 43px 14px 0
+}
+
+.en-but a:hover i {
+    margin-left: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    left: 103px
+}
+
+@keyframes bobbingAnim {
+    0%,100% {
+        transform: translate(0,0);
+        animation-timing-function: ease-in-out
+    }
+
+    50% {
+        transform: translate(0,14px);
+        animation-timing-function: ease-in-out
+    }
+}
+.animated-button.flu-con{
+    background: #7d81f3;
+    left: 58%;
+}
+.base-blue{
+    color: #022279;
+}
+.rs-services.style4.modify1.services3.flutter-add .services-item {
+ height: 340px;
+  
+}
+@media screen and (max-width:768px) {
+  .rs-services.style4.modify1.services3.flutter-add .services-item {
+ height: 250px;
+  
+}
+.rs-services.style4.modify1 .services-item {
+   
+    padding: 20px !important;
+}
+.rs-faq .faq-content .accordion .card .card-header .card-link{
+height: 100px !important;
+
+  font-size: 19px !important;
+}
+.rs-services.style4.modify1.services3.flutter-service .services-item {
+    height: 220px !important;
+}
+.rs-faq .faq-content .accordion .card{
+  margin-bottom: 26px !important;
+}
+  
+}
+
+.rs-services.style4.modify1.services3.flutter-add .services-item:hover {
+    border-color: #175cff !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+        border: 1px solid blue;
+         border-radius: 1rem !important;
+}
+.banner-animation2{
+    height: 100px;
+}
+
+.rs-banner.style9 .banner-animation .bnr-animate.banner-animation4 {
+    z-index: 1 !important;
+}
+.banner-animation4 .vertical{
+    height: 150px;
+}
+.rs-services.style4.modify1.services3.flutter-service .services-item{
+    height: 315px;
+
+}
+.rs-call-us .image-part.cta-2 {
+    position: relative;
+}
+.rs-call-us .image-part.cta-2 img {
+    max-height: 500px;
+    position: absolute;
+    top: -83px;
+    left: 10%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .rs-banner.style9 {
+    height: 1020px !important;       /* makes image responsive */
+   
+  }
+  .rs-banner.style9 .banner-content {
+    padding: 125px 0 0px !important;
+}
+.rs-banner.style9 .images-part img{
+    height: 100%;
+    width: 100%;
+}
+.rs-banner.style9 .banner-content .desc{
+    margin-bottom: 0px !important;
+}
+.ml2 .letter{
+    display: unset !important;
+}
+}
+
+.modal-backdrop.fade.show{
+  z-index: 1;
+}
+
+.custom-input::placeholder {
+  font-size: 12px; /* adjust as needed */
+  color: #000;     /* optional */
+}
+.feature-card.border:hover {
+    border-color: #175cff !important;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+}
+
+.dev-service.rs-services.style4.modify1 .services-item {
+    height: 385px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+ 
+
+    /* * {
+        animation: none !important;
+        transition: none !important;
+    }
+ .aos-animate,
+  .animated,
+  .fade,
+  .slide,
+  .wow {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  } */
+
+  .moble-custom{
+    display: none;
+  }
+}
