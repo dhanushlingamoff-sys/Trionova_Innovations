@@ -2810,3 +2810,14 @@ header.mc-scrolled {
     .tn-navlinks.is-open{max-height:440px;}
     .tn-navlinks a{padding:14px 28px;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.05);font-size:15.5px;}
 }
+
+/* ---- Navbar: sits over the hero at the top, becomes fixed only on scroll ---- */
+header#hdr.tn-header{position:absolute;top:0;left:0;right:0;background:transparent;box-shadow:none;}
+header#hdr.tn-header.mc-scrolled{
+    position:fixed;
+    background:rgba(10,12,18,.92);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 34px -14px rgba(0,0,0,.7);
+    animation:tn-nav-drop .35s ease;
+}
+@keyframes tn-nav-drop{from{transform:translateY(-100%);opacity:.4;}to{transform:translateY(0);opacity:1;}}

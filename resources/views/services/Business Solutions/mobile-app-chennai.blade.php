@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/icon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.6">
+    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.7">
 @endpush
 
 @section('content')
