@@ -80,8 +80,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Faint oversized background wordmarks -->
         <div class="tn-bg-words" aria-hidden="true">
-            <span>ANDROID</span>
             <span>iOS</span>
+            <span>ANDROID</span>
             <span>FLUTTER</span>
             <span>REACT NATIVE</span>
             <span>APP DEVELOPMENT</span>
