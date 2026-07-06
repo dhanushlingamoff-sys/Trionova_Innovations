@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/icon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.4">
+    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.5">
 @endpush
 
 @section('content')
@@ -104,6 +104,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ===== CENTER: floating phone + orbiting tech ===== -->
             <div class="tn-hero-center">
                 <div class="tn-stage">
+                    <!-- blue glow + concentric rings behind the phone -->
+                    <div class="tn-glow" aria-hidden="true"></div>
+                    <div class="tn-rings" aria-hidden="true">
+                        <span class="tn-ring tn-ring-1"></span>
+                        <span class="tn-ring tn-ring-2"></span>
+                        <span class="tn-ring tn-ring-3"></span>
+                    </div>
                     <!-- orbiting tech logos -->
                     <div class="tn-orbit" aria-hidden="true">
                         <span class="tn-tech tn-tech-1"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/flutter.png') }}" alt="Flutter"></span>
@@ -147,34 +154,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-        </div>
-
-        <!-- ===== STATS BAR ===== -->
-        <div class="tn-statbar">
-            <div class="tn-stat">
-                <span class="tn-stat-ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </span>
-                <span class="tn-stat-tx"><b class="tn-count" data-count="50" data-suffix="+">0</b><em>Businesses Trusted<br>Across the Globe</em></span>
-            </div>
-            <div class="tn-stat">
-                <span class="tn-stat-ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-                </span>
-                <span class="tn-stat-tx"><b class="tn-count" data-count="150" data-suffix="+">0</b><em>Projects Delivered<br>Successfully</em></span>
-            </div>
-            <div class="tn-stat">
-                <span class="tn-stat-ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                </span>
-                <span class="tn-stat-tx"><b class="tn-count" data-count="6" data-suffix="+">0</b><em>Years of Experience<br>In App Development</em></span>
-            </div>
-            <div class="tn-stat">
-                <span class="tn-stat-ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-4 4"/></svg>
-                </span>
-                <span class="tn-stat-tx"><b class="tn-count" data-count="100" data-suffix="K+">0</b><em>Daily Active Users<br>On Live Apps</em></span>
-            </div>
         </div>
 
     </section>
@@ -1112,33 +1091,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             p.style.width = p.style.height = s + 'px';
             pWrap.appendChild(p);
         }
-    }
-
-    /* ---- Count-up stats (fires when hero is in view) ---- */
-    function runCount(el) {
-        var target = parseFloat(el.getAttribute('data-count')) || 0;
-        var suffix = el.getAttribute('data-suffix') || '';
-        if (reduce) { el.textContent = target + suffix; return; }
-        var start = null, dur = 1600;
-        function step(ts) {
-            if (!start) start = ts;
-            var prog = Math.min((ts - start) / dur, 1);
-            var eased = 1 - Math.pow(1 - prog, 3);
-            el.textContent = Math.round(target * eased) + suffix;
-            if (prog < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-    }
-    var counts = document.querySelectorAll('.tn-hero .tn-count');
-    if ('IntersectionObserver' in window && counts.length) {
-        var io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (e) {
-                if (e.isIntersecting) { runCount(e.target); io.unobserve(e.target); }
-            });
-        }, { threshold: 0.4 });
-        counts.forEach(function (c) { io.observe(c); });
-    } else {
-        counts.forEach(runCount);
     }
 
     /* ---- Magnetic hover on buttons ---- */
