@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/icon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.5">
+    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.6">
 @endpush
 
 @section('content')
@@ -24,14 +24,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     <!-- ============ HEADER ============ -->
-    <header id="hdr">
-        <div class="mc-wrap mc-nav mx-0">
-            <a class="mc-logo" href="{{ url('/') }}">
+    <header id="hdr" class="tn-header">
+        <div class="mc-wrap tn-nav mx-0">
+            <a class="mc-logo tn-logo" href="{{ url('/') }}">
                 <img src="{{ asset('images/trionova/head-logo.png') }}" alt="Trionova Logo">
             </a>
-            <div class="mc-nav-right">
-                <a class="mc-nav-call" href="tel:+919442132694">Call +91 94421 32694</a>
-                <a class="mc-btn-pill mc-pulse cta-btn">Free Consultation</a>
+
+            <nav class="tn-navlinks" id="tnNavLinks">
+                <a href="{{ url('/') }}">Home</a>
+                <a href="{{ url('/about-us') }}">About Us</a>
+                <a href="{{ url('/mobile-app-company-in-chennai') }}" class="tn-caret">Services
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <a href="{{ url('/products') }}" class="tn-caret">Solutions
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="{{ url('/contact') }}">Pricing</a>
+                <a href="{{ url('/blogs/') }}">Blog</a>
+                <a href="{{ url('/contact') }}">Contact Us</a>
+            </nav>
+
+            <div class="mc-nav-right tn-nav-right">
+                <a class="tn-nav-cta mc-pulse cta-btn">
+                    Get Free Consultation
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <button class="tn-burger" id="tnBurger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -70,13 +91,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <!-- ===== LEFT: copy + CTA + rating ===== -->
             <div class="tn-hero-left">
-                <p class="tn-eyebrow">Mobile App Development Company in Chennai</p>
+                <p class="tn-eyebrow">Trionova Technologies</p>
                 <h1 class="tn-title" data-reveal>
-                    <span class="tn-line"><span class="w">Building</span> <span class="w">Powerful</span></span>
-                    <span class="tn-line"><span class="w">Mobile</span> <span class="w">Apps</span> <span class="w">That</span></span>
-                    <span class="tn-line tn-grad"><span class="w">Drive</span> <span class="w">Real</span> <span class="w">Growth</span></span>
+                    <span class="tn-line"><span class="w">Mobile</span> <span class="w">App</span> <span class="w">Development</span></span>
+                    <span class="tn-line tn-grad"><span class="w">Company</span> <span class="w">in</span> <span class="w">Chennai</span></span>
                 </h1>
-                <p class="tn-sub">We design and develop high-performance Android, iOS, Flutter and React Native apps that help startups and enterprises scale faster and deliver exceptional user experiences.</p>
+                <p class="tn-sub">Native Android, iOS, Flutter &amp; React Native apps built to scale your business.</p>
 
                 <div class="tn-cta-row">
                     <a class="tn-btn tn-btn-primary cta-btn" data-magnetic>
@@ -1057,6 +1077,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function () {
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ---- Mobile nav toggle ---- */
+    var burger = document.getElementById('tnBurger');
+    var navLinks = document.getElementById('tnNavLinks');
+    if (burger && navLinks) {
+        burger.addEventListener('click', function () {
+            var open = navLinks.classList.toggle('is-open');
+            burger.classList.toggle('is-open', open);
+            burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        navLinks.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                navLinks.classList.remove('is-open');
+                burger.classList.remove('is-open');
+                burger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 
     /* ---- Heading: word-by-word reveal ---- */
     var title = document.querySelector('.tn-title[data-reveal]');
