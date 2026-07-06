@@ -628,27 +628,10 @@ class ChatbotController extends Controller
 
         /*
         |------------------------------------------------------
-        | 2. FIND REPLY
+        | LEAD FORM MARKUP (shown for contact intent + fallback)
         |------------------------------------------------------
         */
-        $reply = null;
-
-        foreach ($this->faq as $item) {
-            foreach ($item['keywords'] as $keyword) {
-                if (str_contains($message, strtolower($keyword))) {
-                    $reply = $item['answer'];
-                    break 2;
-                }
-            }
-        }
-
-        /*
-        |------------------------------------------------------
-        | 3. FALLBACK RESPONSE
-        |------------------------------------------------------
-        */
-        if (! $reply) {
-            $reply = '
+        $leadForm = '
             <div class="tn-chat-form-wrap">
                 <h3 class="tn-chat-form-title">Talk to Our Team</h3>
 
@@ -672,13 +655,53 @@ class ChatbotController extends Controller
                 <button type="submit" class="tn-chat-submit-btn">
                 Submit
                 </button>
-                    
+
                 <div class="tn-chat-success" style="display:none;">
                 Thank you! Our team will contact you soon.
                 </div>
 
                 </form>
             </div>';
+
+        /*
+        |------------------------------------------------------
+        | 2. CONTACT INTENT → SHOW LEAD FORM
+        |------------------------------------------------------
+        */
+        $contactKeywords = ['contact your team', 'contact team', 'contact us', 'contact', 'talk to team', 'talk to your team'];
+
+        $reply = null;
+
+        foreach ($contactKeywords as $keyword) {
+            if (str_contains($message, $keyword)) {
+                $reply = $leadForm;
+                break;
+            }
+        }
+
+        /*
+        |------------------------------------------------------
+        | 3. FIND FAQ REPLY
+        |------------------------------------------------------
+        */
+        if (! $reply) {
+            foreach ($this->faq as $item) {
+                foreach ($item['keywords'] as $keyword) {
+                    if (str_contains($message, strtolower($keyword))) {
+                        $reply = $item['answer'];
+                        break 2;
+                    }
+                }
+            }
+        }
+
+        /*
+        |------------------------------------------------------
+        | 4. FALLBACK RESPONSE
+        |------------------------------------------------------
+        */
+        if (! $reply) {
+            $reply = $leadForm;
         }
 
         /*

@@ -1126,6 +1126,13 @@ header.mc-scrolled {
 }
 
 @media(max-width:860px) {
+    .portfolio {
+        padding: 70px 0;
+    }
+    .mc-portfolio-owl {
+        margin-top: 32px;
+        padding: 0 20px;
+    }
     .mc-case-card {
         grid-template-columns: 1fr;
     }
@@ -1136,9 +1143,28 @@ header.mc-scrolled {
         padding: 32px 28px;
         max-height: none;
     }
+    .mc-case-stack {
+        display: none;
+    }
+    .mc-portfolio-owl.owl-carousel .owl-nav {
+        display: none;
+    }
+    .banner-portfolio {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 958 / 1060;
+    }
+    .banner-portfolio .bg {
+        inset: 0;
+        animation: none;
+        background-image: url('/images/mobile-app-ad/portfolio-img-monile.jpg');
+    }
 }
 
 @media(max-width:480px) {
+    .mc-portfolio-owl {
+        padding: 0 12px;
+    }
     .mc-case-content {
         padding: 24px 20px;
         gap: 12px;

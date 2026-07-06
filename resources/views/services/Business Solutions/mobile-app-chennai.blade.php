@@ -358,7 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <!-- ============ PORTFOLIO BANNER (Ken Burns) ============ -->
-    <section class="banner">
+    <section class="banner banner-portfolio">
         <div class="bg kenburns kenburns-portfolio"></div>
     </section>
 

@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 p-0 position-relative">
-                        <img src="images/images/demo-real-estate-contact-01.jpg" alt="Contact Trionova Technology" class="w-100">
+                        <img src="images/images/contact-us-banner.jpg" alt="Contact Trionova Technology" class="w-100">
                         <div class="alt-font fw-600 fs-350 lg-fs-275 md-fs-250 sm-fs-200 xs-fs-140 ls-minus-5px xs-ls-minus-2px position-absolute right-minus-50px lg-right-minus-0px bottom-minus-80px md-bottom-minus-60px xs-bottom-minus-40px text-white text-outline text-outline-width-3px" data-bottom-top="transform: translate3d(80px, 0px, 0px);" data-top-bottom="transform: translate3d(-280px, 0px, 0px);">contact</div>
                     </div>
                 </div>
