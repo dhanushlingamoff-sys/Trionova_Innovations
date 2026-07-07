@@ -14,7 +14,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/icon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.7">
+    <link rel="stylesheet" href="{{ asset('css/mobile-chennai.css') }}?v=1.0.8">
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js" defer></script>
 @endpush
 
 @section('content')
@@ -166,38 +167,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </section>
 
-    <!-- ============ STATS (phones parallax behind) ============ -->
-    <section class="mc-stats">
+    {{-- ═══════════════════════════════════════════════════════════
+         OUR TECHNOLOGIES
+    ═══════════════════════════════════════════════════════════ --}}
+    <section class="tech2 reveal">
+        <div class="tech2__bg"></div>
+        <div class="tech2__wrap">
+            <div class="tech2__card">
+            <div class="tech2__inner">
 
-        <!-- Background image layer -->
-        <div class="mc-stats-bgs" aria-hidden="true">
-            <div class="mc-stat-bg mc-bg-1"></div>
-            <div class="mc-stat-bg mc-bg-2"></div>
-            <div class="mc-stat-bg mc-bg-3"></div>
-            <div class="mc-stat-bg mc-bg-4"></div>
-        </div>
+            <div class="tech2__left">
+                <div class="feat-eyebrow">
+                    {{-- <span class="feat-eyebrow__line"></span>
+                    <span class="feat-eyebrow__dot"></span> --}}
+                    <span class="feat-eyebrow__text">Our Technologies</span>
+                </div>
+                <h2 class="about-headline" id="techHeadline">The Technology Behind High-Performance Mobile Apps</h2>
+                <p class="tech2__para">
+                    We use proven technologies like Flutter, React Native, Android, iOS, Laravel, Node.js, Firebase, and cloud platforms to build mobile applications that deliver exceptional performance, seamless user experiences, and long-term scalability.
+                </p>
+                <a href="{{ url('/about-us') }}" class="page-btn">About Company &nbsp;→</a>
 
-        <!-- Dark overlay for readability -->
-        <div class="mc-stats-overlay" aria-hidden="true"></div>
+                @php
+                    $caps = [
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/react.png','name'=>'React'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/laravel.png','name'=>'Laravel'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/python.png','name'=>'Python'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/node-js.png','name'=>'Node.js'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/kotlin.png','name'=>'Kotlin'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/javascript.png','name'=>'JavaScript'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/typescript.png','name'=>'TypeScript'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/mysql.png','name'=>'MySQL'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/firebase.png','name'=>'Firebase'],
+                        ['img'=>'images/mobile-app-ad/technologies/Mobile-icons/flutter.png','name'=>'Flutter'],
+                    ];
+                @endphp
+                <div class="tech2__stage" id="techStage" aria-label="Technologies we use">
+                    @foreach($caps as $cap)
+                    <div class="tech-cap">
+                        <img src="{{ asset($cap['img']) }}" alt="{{ $cap['name'] }}"
+                             onerror="this.style.display='none'">
+                        <span>{{ $cap['name'] }}</span>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
 
-        <div class="mc-wrap mc-stats-inner">
-            <div class="mc-stat">
-                <div class="mc-num" data-count="50" data-suffix="+">0</div>
-                <div class="label">Apps Launched</div>
+            <div class="tech2__right">
+                <img src="{{ asset('images/mobile-app-ad/technologies/tech.png') }}" alt="AI technology"
+                     onerror="this.style.display='none'">
             </div>
-            <div class="mc-stat">
-                <div class="mc-num" data-count="100" data-suffix="+">0</div>
-                <div class="label">Happy Clients</div>
-            </div>
-            <div class="mc-stat">
-                <div class="mc-num" data-count="6" data-suffix="+">0</div>
-                <div class="label">Years in Chennai</div>
-            </div>
-            <div class="mc-stat">
-                <div class="mc-num" data-count="98" data-suffix="%">0</div>
-                <div class="label">Client Satisfaction</div>
-            </div>
-        </div>
+
+            </div> {{-- /.tech2__inner --}}
+            </div> {{-- /.tech2__card --}}
+        </div> {{-- /.tech2__wrap --}}
     </section>
 
     <!-- ============ GLOBAL SUCCESS + LOGO MARQUEE ============ -->
@@ -1131,6 +1154,160 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             btn.addEventListener('mouseleave', function () { btn.style.transform = ''; });
         });
     }
+})();
+</script>
+@endpush
+
+@push('scripts')
+<script>
+/* ── Matter.js physics capsules + scroll-reveal ── */
+(function () {
+    'use strict';
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ── Scroll-reveal ── */
+    var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function (el, idx) {
+        el.style.transitionDelay = reduced ? '0ms' : Math.min(idx * 120, 240) + 'ms';
+        revealObserver.observe(el);
+    });
+
+    /* ── Word-by-word headline reveal ── */
+    ['techHeadline'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var words = el.textContent.trim().split(/\s+/);
+        el.innerHTML = words.map(function (w) { return '<span class="word">' + w + '</span>'; }).join(' ');
+        var wordEls = el.querySelectorAll('.word');
+        new IntersectionObserver(function (entries, obs) {
+            if (!entries[0].isIntersecting) return;
+            wordEls.forEach(function (w, i) { setTimeout(function () { w.classList.add('lit'); }, i * 80); });
+            obs.disconnect();
+        }, { threshold: 0.3 }).observe(el);
+    });
+
+    /* ── Matter.js falling capsules ── */
+    function initPhysics() {
+        var stage = document.getElementById('techStage');
+        if (!stage) return;
+        var caps = Array.prototype.slice.call(stage.querySelectorAll('.tech-cap'));
+        if (!caps.length) return;
+
+        if (reduced || !window.Matter) { staticLayout(caps, stage); return; }
+
+        var M = window.Matter;
+        var engine, runner, bodies = [], raf = null, started = false;
+
+        function staticLayout(caps, stage) {
+            stage.style.display = 'flex';
+            stage.style.flexWrap = 'wrap';
+            stage.style.alignContent = 'flex-end';
+            caps.forEach(function (cap) {
+                cap.style.position = 'relative';
+                cap.style.opacity = '1';
+                cap.style.transform = 'none';
+                cap.style.display = 'inline-flex';
+                cap.style.margin = '6px';
+            });
+        }
+
+        function build() {
+            var W = stage.clientWidth, H = stage.clientHeight, t = 120;
+            engine = M.Engine.create();
+            engine.gravity.y = 1.1;
+            var opts = { isStatic: true, restitution: 0.2 };
+            M.World.add(engine.world, [
+                M.Bodies.rectangle(W / 2, H + t / 2, W + t * 2, t, opts),
+                M.Bodies.rectangle(-t / 2, H / 2, t, H * 4, opts),
+                M.Bodies.rectangle(W + t / 2, H / 2, t, H * 4, opts)
+            ]);
+            bodies = caps.map(function (cap, i) {
+                var w = cap.offsetWidth, h = cap.offsetHeight;
+                var x = 40 + Math.random() * Math.max(1, W - 80 - w) + w / 2;
+                var y = -(h / 2) - 12 - i * 40 - Math.random() * 24;
+                var body = M.Bodies.rectangle(x, y, w, h, {
+                    chamfer: { radius: h / 2 },
+                    restitution: 0.35, friction: 0.45, frictionAir: 0.02,
+                    angle: (Math.random() - 0.5) * 0.7
+                });
+                body.__w = w; body.__h = h; body.__el = cap;
+                return body;
+            });
+            M.World.add(engine.world, bodies);
+            var mouse = M.Mouse.create(stage);
+            var mc = M.MouseConstraint.create(engine, { mouse: mouse, constraint: { stiffness: 0.2 } });
+            M.World.add(engine.world, mc);
+            if (mouse.element) {
+                /* Remove all Matter.js event listeners that block page scroll */
+                mouse.element.removeEventListener('mousewheel', mouse.mousewheel);
+                mouse.element.removeEventListener('wheel',      mouse.mousewheel);
+                mouse.element.removeEventListener('DOMMouseScroll', mouse.mousewheel);
+                mouse.element.removeEventListener('touchmove',  mouse.mousemove);
+                mouse.element.removeEventListener('touchstart', mouse.mousedown);
+                mouse.element.removeEventListener('touchend',   mouse.mouseup);
+                /* Re-add as passive — browser ignores any preventDefault() inside,
+                   so the page scrolls freely while drag still works */
+                mouse.element.addEventListener('wheel',      mouse.mousewheel, { passive: true });
+                mouse.element.addEventListener('touchmove',  mouse.mousemove,  { passive: true });
+                mouse.element.addEventListener('touchstart', mouse.mousedown,  { passive: true });
+                mouse.element.addEventListener('touchend',   mouse.mouseup,    { passive: true });
+            }
+            runner = M.Runner.create();
+        }
+
+        function tick() {
+            bodies.forEach(function (b) {
+                b.__el.style.opacity = '1';
+                b.__el.style.transform = 'translate(' + (b.position.x - b.__w / 2).toFixed(2) + 'px,' +
+                    (b.position.y - b.__h / 2).toFixed(2) + 'px) rotate(' + b.angle.toFixed(3) + 'rad)';
+            });
+            raf = requestAnimationFrame(tick);
+        }
+
+        function start() {
+            if (started) return;
+            started = true;
+            build();
+            M.Runner.run(runner, engine);
+            tick();
+        }
+
+        function destroy() {
+            if (!started) return;
+            if (raf) cancelAnimationFrame(raf);
+            M.Runner.stop(runner);
+            M.World.clear(engine.world, false);
+            M.Engine.clear(engine);
+            started = false;
+        }
+
+        new IntersectionObserver(function (entries, obs) {
+            if (entries[0].isIntersecting) { start(); obs.disconnect(); }
+        }, { threshold: 0.2 }).observe(stage);
+
+        var rt;
+        window.addEventListener('resize', function () {
+            clearTimeout(rt);
+            rt = setTimeout(function () {
+                if (!started) return;
+                destroy();
+                caps.forEach(function (c) { c.style.opacity = '0'; c.style.transform = 'translate(-300px,-300px)'; });
+                start();
+            }, 300);
+        });
+    }
+
+    if (document.readyState !== 'loading') initPhysics();
+    else document.addEventListener('DOMContentLoaded', initPhysics);
 })();
 </script>
 @endpush
