@@ -24,7 +24,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     <!-- ============ HEADER ============ -->
-    <header id="hdr" class="tn-header">
+    <header id="hdr" class="mc-page-header">
         <div class="mc-wrap tn-nav mx-0">
             <a class="mc-logo tn-logo" href="{{ url('/') }}">
                 <img src="{{ asset('images/trionova/head-logo.png') }}" alt="Trionova Logo">
@@ -33,15 +33,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <nav class="tn-navlinks" id="tnNavLinks">
                 <a href="{{ url('/') }}">Home</a>
                 <a href="{{ url('/about-us') }}">About Us</a>
-                <a href="{{ url('/mobile-app-company-in-chennai') }}" class="tn-caret">Services
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </a>
-                <a href="{{ url('/products') }}" class="tn-caret">Solutions
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="{{ url('/contact') }}">Pricing</a>
-                <a href="{{ url('/blogs/') }}">Blog</a>
                 <a href="{{ url('/contact') }}">Contact Us</a>
             </nav>
 
@@ -79,13 +71,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <!-- Faint oversized background wordmarks -->
-        <div class="tn-bg-words" aria-hidden="true">
+        {{-- <div class="tn-bg-words" aria-hidden="true">
             <span>iOS</span>
             <span>ANDROID</span>
             <span>FLUTTER</span>
             <span>REACT NATIVE</span>
             <span>APP DEVELOPMENT</span>
-        </div>
+        </div> --}}
 
         <div class="tn-hero-inner">
 
@@ -121,17 +113,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-            <!-- ===== CENTER: floating phone + orbiting tech ===== -->
+            <!-- ===== RIGHT: floating phone + orbiting tech ===== -->
             <div class="tn-hero-center">
                 <div class="tn-stage">
-                    <!-- blue glow + concentric rings behind the phone -->
                     <div class="tn-glow" aria-hidden="true"></div>
                     <div class="tn-rings" aria-hidden="true">
                         <span class="tn-ring tn-ring-1"></span>
                         <span class="tn-ring tn-ring-2"></span>
                         <span class="tn-ring tn-ring-3"></span>
                     </div>
-                    <!-- orbiting tech logos -->
                     <div class="tn-orbit" aria-hidden="true">
                         <span class="tn-tech tn-tech-1"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/flutter.png') }}" alt="Flutter"></span>
                         <span class="tn-tech tn-tech-2"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/Android.png') }}" alt="Android"></span>
@@ -140,8 +130,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="tn-tech tn-tech-5"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/node-js.png') }}" alt="Node.js"></span>
                         <span class="tn-tech tn-tech-6"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/firebase.png') }}" alt="Firebase"></span>
                     </div>
-
-                    <!-- phone (rotating device mockups) -->
                     <div class="tn-phone" id="tnPhoneScreen">
                         <img class="tn-phone-img is-active" src="{{ asset('images/mobile-app-ad/mobile-2.webp') }}" alt="Mobile app screen" loading="eager" fetchpriority="high">
                         <img class="tn-phone-img" src="{{ asset('images/mobile-app-ad/mobile-3.webp') }}" alt="Mobile app screen" loading="lazy">
@@ -152,28 +140,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-            <!-- ===== RIGHT: floating glass feature cards ===== -->
-            <div class="tn-hero-right">
-                <div class="tn-card tn-card-f1">
-                    <span class="tn-card-ic"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/flutter.png') }}" alt="Flutter"></span>
-                    <span class="tn-card-tx"><b>Flutter</b><em>2x Faster Development</em></span>
-                </div>
-                <div class="tn-card tn-card-f2">
-                    <span class="tn-card-ic"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/Android.png') }}" alt="Android"></span>
-                    <span class="tn-card-tx"><b>Android</b><em>Native Performance</em></span>
-                </div>
-                <div class="tn-card tn-card-f3">
-                    <span class="tn-card-ic"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/ios.png') }}" alt="iOS"></span>
-                    <span class="tn-card-tx"><b>iOS</b><em>App Store Ready</em></span>
-                </div>
-                <div class="tn-card tn-card-f4">
-                    <span class="tn-card-ic tn-card-ic-ai">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
-                    </span>
-                    <span class="tn-card-tx"><b>AI Powered</b><em>Smart &amp; Future Ready Apps</em></span>
-                </div>
-            </div>
+        </div>
 
+        <!-- ===== FEATURE CARDS row — below the split ===== -->
+        <div class="tn-feature-cards">
+            <div class="tn-card tn-card-f1">
+                <span class="tn-card-ic"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/flutter.png') }}" alt="Flutter"></span>
+                <span class="tn-card-tx"><b>Flutter</b><em>2x Faster Development</em></span>
+            </div>
+            <div class="tn-card tn-card-f2">
+                <span class="tn-card-ic"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/Android.png') }}" alt="Android"></span>
+                <span class="tn-card-tx"><b>Android</b><em>Native Performance</em></span>
+            </div>
+            <div class="tn-card tn-card-f3">
+                <span class="tn-card-ic"><img src="{{ asset('images/trionova/Technologies/Mobile-icons/ios.png') }}" alt="iOS"></span>
+                <span class="tn-card-tx"><b>iOS</b><em>App Store Ready</em></span>
+            </div>
+            <div class="tn-card tn-card-f4">
+                <span class="tn-card-ic tn-card-ic-ai">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+                </span>
+                <span class="tn-card-tx"><b>AI Powered</b><em>Smart &amp; Future Ready Apps</em></span>
+            </div>
         </div>
 
     </section>
